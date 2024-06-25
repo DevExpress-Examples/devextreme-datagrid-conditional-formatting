@@ -2,6 +2,7 @@
 ![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/348495058/20.2.6%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T988042)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+[![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 # DataGrid - How to implement conditional formatting
 
@@ -13,3 +14,10 @@ _See also:_
 **Cell Customization Demo** - [JQuery](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/jQuery/Light/), [Angular](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/Angular/Light/), [React](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/React/Light/), [Vue](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/Vue/Light/), [ASP.NET Core](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/NetCore/Light/)
 <br />
 [Customize the Appearance of DataGrid cells](https://js.devexpress.com/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/#Customize_the_Appearance)
+<!-- feedback -->
+## Does this example address your development requirements/objectives?
+
+[<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-datagrid-conditional-formatting&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-datagrid-conditional-formatting&~~~was_helpful=no)
+
+(you will be redirected to DevExpress.com to submit your response)
+<!-- feedback end -->
