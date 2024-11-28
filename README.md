@@ -11,9 +11,9 @@ This example demonstrates how to use the [onCellPrepared](https://js.devexpress.
 <br />
 _See also:_
 <br />
-**Cell Customization Demo** - [JQuery](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/jQuery/Light/), [Angular](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/Angular/Light/), [React](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/React/Light/), [Vue](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/Vue/Light/), [ASP.NET Core](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/NetCore/Light/)
+**Cell Customization Demo** - [JQuery](https://js.devexpress.com/jQuery/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/Light/), [Angular](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/Angular/Light/), [React](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/React/Light/), [Vue](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/Vue/Light/), [ASP.NET Core](https://js.devexpress.com/Demos/WidgetsGallery/Demo/DataGrid/CellCustomization/NetCore/Light/)
 <br />
-[Customize the Appearance of DataGrid cells](https://js.devexpress.com/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/#Customize_the_Appearance)
+[Customize the Appearance of DataGrid cells](https://js.devexpress.com/jQuery/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/)
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
