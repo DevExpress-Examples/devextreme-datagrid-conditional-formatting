@@ -1,0 +1,97 @@
+@using ASP_NET_Core.Models
+
+@model IEnumerable<Order>
+
+@(Html.DevExtreme().DataGrid<Order>()
+    .ID("gridContainer")
+    .DataSource(ds=> ds.Mvc()
+        .Controller("SampleData")
+        .LoadAction("Get")
+    )
+    .ShowBorders(true)
+    .GroupPanel(groupPanel => groupPanel.Visible(true))
+    .Grouping(grouping => grouping.AutoExpandAll(true))
+    .SortByGroupSummaryInfo(i => i.Add().SummaryItem("count"))
+    .OnCellPrepared("onCellPrepared")
+    .Columns(columns => {
+        columns.AddFor(m => m.Employee)
+            .GroupIndex(0);
+
+        columns.AddFor(m => m.OrderNumber)
+            .Width(130);
+
+        columns.AddFor(m => m.OrderDate)
+            .Width(160);
+
+        columns.AddFor(m => m.CustomerStoreCity)
+            .GroupIndex(1);
+
+        columns.AddFor(m => m.CustomerStoreState);
+
+        columns.AddFor(m => m.SaleAmount)
+            .Alignment(HorizontalAlignment.Right)
+            .Format(Format.Currency)
+            .SortOrder(SortOrder.Desc);
+    })
+    .Summary(s => s
+        .GroupItems(groupItems => {
+            groupItems.AddFor(m => m.OrderNumber)
+                .SummaryType(SummaryType.Count)
+                .DisplayFormat("{0} orders")
+                .AlignByColumn(false);
+
+            groupItems.AddFor(m => m.SaleAmount)
+                .SummaryType(SummaryType.Max)
+                .DisplayFormat("Max: {0}")
+                .ValueFormat(Format.Currency)
+                .AlignByColumn(true)
+                .ShowInGroupFooter(false);
+
+            groupItems.AddFor(m => m.SaleAmount)
+                .SummaryType(SummaryType.Sum)
+                .DisplayFormat("Sum: {0}")
+                .ValueFormat(Format.Currency)
+                .AlignByColumn(true)
+                .ShowInGroupFooter(true);
+        })
+
+        .TotalItems(totalItems => {
+            totalItems.AddFor(m => m.SaleAmount)
+                .SummaryType(SummaryType.Sum)
+                .DisplayFormat("Total Sum: {0}")
+                .ValueFormat(Format.Currency);
+        })
+    )
+)
+
+<script>
+    function onCellPrepared(e) {
+        if (e.rowType === "data") {
+            if (new Date(e.data.OrderDate) < new Date(2014, 2, 3)) {
+                e.cellElement.css({ color: "#AAAAAA" });
+            }
+            if (e.data.SaleAmount > 15000) {
+                if (e.column.dataField === "OrderNumber") {
+                    e.cellElement.css({ "font-weight": "bold" });
+                }
+                if (e.column.dataField === "SaleAmount") {
+                    e.cellElement.css({ "background-color": "#FFBB00", "color": "#000" });
+                }
+            }
+        }
+
+        if (e.rowType === "group") {
+            if (e.row.groupIndex === 0) {
+                e.cellElement.css({ "background-color": "#BEDFE6", "color": "#000" });
+            }
+            if (e.row.groupIndex === 1) {
+                e.cellElement.css({ "background-color": "#C9ECD7", "color": "#000" });
+            }
+            e.cellElement.children().css({ "color": "#000" });
+        }
+
+        if (e.rowType === "groupFooter" && e.column.dataField === "SaleAmount") {
+            e.cellElement.css({ "font-style": "italic" });
+        }
+    }
+</script>
