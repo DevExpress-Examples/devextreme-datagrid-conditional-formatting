@@ -1,4 +1,4 @@
-export type Order = {
+export interface Order {
   ID: number;
   OrderNumber: number;
   OrderDate: Date;
@@ -8,7 +8,7 @@ export type Order = {
   CustomerStoreState: string;
   CustomerStoreCity: string;
   Employee: string;
-};
+}
 
 let orders = [{
   ID: 1,
