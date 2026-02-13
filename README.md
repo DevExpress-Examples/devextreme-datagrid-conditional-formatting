@@ -15,7 +15,7 @@ _See also:_
 <br />
 [Customize the Appearance of DataGrid cells](https://js.devexpress.com/jQuery/Documentation/Guide/UI_Components/DataGrid/Columns/Customize_Cells/)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-datagrid-conditional-formatting&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-datagrid-conditional-formatting&~~~was_helpful=no)
 
