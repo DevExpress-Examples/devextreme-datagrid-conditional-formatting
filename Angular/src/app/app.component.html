@@ -5,34 +5,34 @@
     [showBorders]="true"
     (onCellPrepared)="onCellPrepared($event)"
   >
-    <dxi-column dataField="Employee" [groupIndex]="0"> </dxi-column>
-    <dxi-column dataField="OrderNumber" caption="Invoice Number" [width]="130">
-    </dxi-column>
-    <dxi-column dataField="OrderDate" [width]="160" dataType="date">
-    </dxi-column>
-    <dxi-column dataField="CustomerStoreCity" caption="City" [groupIndex]="1">
-    </dxi-column>
-    <dxi-column dataField="CustomerStoreState" caption="State"> </dxi-column>
-    <dxi-column
+    <dxi-data-grid-column dataField="Employee" [groupIndex]="0"> </dxi-data-grid-column>
+    <dxi-data-grid-column dataField="OrderNumber" caption="Invoice Number" [width]="130">
+    </dxi-data-grid-column>
+    <dxi-data-grid-column dataField="OrderDate" [width]="160" dataType="date">
+    </dxi-data-grid-column>
+    <dxi-data-grid-column dataField="CustomerStoreCity" caption="City" [groupIndex]="1">
+    </dxi-data-grid-column>
+    <dxi-data-grid-column dataField="CustomerStoreState" caption="State"> </dxi-data-grid-column>
+    <dxi-data-grid-column
       dataField="SaleAmount"
       alignment="right"
       format="currency"
       sortOrder="desc"
     >
-    </dxi-column>
-    <dxo-group-panel [visible]="true"> </dxo-group-panel>
-    <dxo-grouping [autoExpandAll]="true"> </dxo-grouping>
-    <dxi-sort-by-group-summary-info summaryItem="count">
-    </dxi-sort-by-group-summary-info>
-    <dxo-summary>
-      <dxi-group-item
+    </dxi-data-grid-column>
+    <dxo-data-grid-group-panel [visible]="true"> </dxo-data-grid-group-panel>
+    <dxo-data-grid-grouping [autoExpandAll]="true"> </dxo-data-grid-grouping>
+    <dxi-data-grid-sort-by-group-summary-info summaryItem="count">
+    </dxi-data-grid-sort-by-group-summary-info>
+    <dxo-data-grid-summary>
+      <dxi-data-grid-group-item
         column="OrderNumber"
         summaryType="count"
         displayFormat="{0} orders"
         [alignByColumn]="false"
       >
-      </dxi-group-item>
-      <dxi-group-item
+      </dxi-data-grid-group-item>
+      <dxi-data-grid-group-item
         column="SaleAmount"
         summaryType="max"
         displayFormat="Max: {0}"
@@ -40,8 +40,8 @@
         [alignByColumn]="true"
         [showInGroupFooter]="false"
       >
-      </dxi-group-item>
-      <dxi-group-item
+      </dxi-data-grid-group-item>
+      <dxi-data-grid-group-item
         column="SaleAmount"
         summaryType="sum"
         displayFormat="Sum: {0}"
@@ -49,14 +49,14 @@
         [alignByColumn]="true"
         [showInGroupFooter]="true"
       >
-      </dxi-group-item>
-      <dxi-total-item
+      </dxi-data-grid-group-item>
+      <dxi-data-grid-total-item
         column="SaleAmount"
         summaryType="sum"
         displayFormat="Total Sum: {0}"
         valueFormat="currency"
       >
-      </dxi-total-item>
-    </dxo-summary>
+      </dxi-data-grid-total-item>
+    </dxo-data-grid-summary>
   </dx-data-grid>
 </div>
