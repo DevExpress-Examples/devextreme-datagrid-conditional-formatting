@@ -5,14 +5,24 @@
     [showBorders]="true"
     (onCellPrepared)="onCellPrepared($event)"
   >
-    <dxi-data-grid-column dataField="Employee" [groupIndex]="0"> </dxi-data-grid-column>
-    <dxi-data-grid-column dataField="OrderNumber" caption="Invoice Number" [width]="130">
+    <dxi-data-grid-column dataField="Employee" [groupIndex]="0">
+    </dxi-data-grid-column>
+    <dxi-data-grid-column
+      dataField="OrderNumber"
+      caption="Invoice Number"
+      [width]="130"
+    >
     </dxi-data-grid-column>
     <dxi-data-grid-column dataField="OrderDate" [width]="160" dataType="date">
     </dxi-data-grid-column>
-    <dxi-data-grid-column dataField="CustomerStoreCity" caption="City" [groupIndex]="1">
+    <dxi-data-grid-column
+      dataField="CustomerStoreCity"
+      caption="City"
+      [groupIndex]="1"
+    >
     </dxi-data-grid-column>
-    <dxi-data-grid-column dataField="CustomerStoreState" caption="State"> </dxi-data-grid-column>
+    <dxi-data-grid-column dataField="CustomerStoreState" caption="State">
+    </dxi-data-grid-column>
     <dxi-data-grid-column
       dataField="SaleAmount"
       alignment="right"
